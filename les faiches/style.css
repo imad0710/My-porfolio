@@ -293,7 +293,7 @@ body {
 }
 
 .app {
-    background-image: url(./pexels-szabó-viktor-3874479.jpg);
+    background-image: url(./pexels-cloud.jpg);
     background-repeat: no-repeat;
    background-size: 100%;
     background-color: var(--color--contrast);
@@ -2219,9 +2219,13 @@ pre[class*=language-] {
 background-color: black;
 color: rgb(216, 25, 25);
 }
-#mouvement:hover{
-transition: var(--translateX);
-
-    
+#move:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+    0 0 80px #fff ,
+    0 0 120px #fff;
+   
 }
 
