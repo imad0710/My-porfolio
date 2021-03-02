@@ -338,6 +338,28 @@
                 max-width: 100%
             }
 
+            .skip-link {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                text-transform: uppercase;
+                font-weight: 700;
+                text-align: center;
+                transform: translateY(-4rem);
+                transition: all .1s ease;
+                z-index: 3;
+                display: inline-block;
+                padding: 1rem;
+                width: auto;
+                background-color: #f2f2f2;
+                background-color: var(--color--contrast)
+            }
+
+            .skip-link:focus {
+                transform: translateY(0)
+            }
 
             .layout--post {
                 display: inline;
@@ -836,7 +858,7 @@
                     position:-webkit-sticky;
                     position: sticky;
                     top: 1em;
-                    width: 10vw;
+                    width: 5vw;
                     margin: 0;
                     transform: rotate(90deg) translateX(calc(-5vw - var(--translateX)));
                     white-space: nowrap
@@ -2219,7 +2241,47 @@
             .nuxt-progress-failed {
                 background-color: red
             }
-            .dark-mode {
+
+            .writing-list {
+                display: grid;
+                grid-gap: 2rem;
+                padding-bottom: 4rem
+                
+            }
+
+            @media screen and (min-width: 44rem) {
+                .writing-list {
+                    margin:0 1rem;
+                    padding-top: 2rem
+                }
+            }
+
+            @media screen and (min-width: 55rem) {
+                .writing-list {
+                    margin-top:7.5rem;
+                    margin-bottom: 7.5rem;
+                    grid-gap: 4rem
+                }
+            }
+
+.container {
+  width: 50vw;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  margin: 0%;
+}
+
+.html {width: 50%; background-color: #4CAF50; margin-left: -18px;}
+.css {width: 25%; background-color: #2196F3; margin-left: -18px; }
+.js {width: 2%; background-color: #f44336;  margin-left: -18px;}
+
+.dark-mode {
   background-color: black;
   color: rgb(216, 25, 25);
 }
@@ -2234,6 +2296,7 @@
             <div id="__layout">
             
                 <div class="app">
+                    <a href="#main" class="skip-link">Skip to main content</a>
                     <aside class="blm">
                         LIVE IS A MIXTURE OF BLACK AND WHITE. <br>
                         JUSTICE . PEACE
@@ -2241,23 +2304,24 @@
                     <nav class="nav" >
                         <ul class="nav__list">
                             <li class="nav__list-item">
-                                <a href="file:///C:/Users/admin/Desktop/portfolio%20imad%20korchi%20black%20&%20white/imad%20korchi%20my%20portfolio.html#" target="_self" aria-current="page" aria-label="home page" class="nav__link nav__link--no-decoration nav__link--active nuxt-link-active">
+                                <a href="imad korchi my portfolio.html" target="_self" aria-current="page" aria-label="home page" class="nav__link nav__link--no-decoration nav__link--active nuxt-link-active">
                                     <svg viewBox="0 0 100 100" fill="currentColor" class="nav__link-icon">
                                         <rect width="100" height="100"></rect>
                                     </svg>
                                 </a>
                             </li>
                             <li class="nav__list-item">
-                                <a href="file:///C:/Users/admin/Desktop/portfolio%20imad%20korchi%20black%20&%20white/work.HTML" target="_self"   class="nav__link">Work</a>
+                                <a href="work.HTML" target="_self"   class="nav__link">Work</a>
                             </li>
                             <li class="nav__list-item">
-                              <a href="file:///C:/Users/admin/Desktop/portfolio%20imad%20korchi%20black%20&%20white/skills.HTML" target="_self" class="nav__link">  Skills</a>
+                              <a href="skills.HTML" target="_self" class="nav__link">  Skills</a>
+                            
                             </li>
                              <li class="nav__list-item">
-                               <a href="file:///C:/Users/admin/Desktop/portfolio%20imad%20korchi%20black%20&%20white/about.HTML" target="_self" class="nav__link">About</a>
+                               <a href="about.HTML" target="_self" class="nav__link">About</a>
                             </li>
                             <li class="nav__list-item">
-                                <a href="file:///C:/Users/admin/Desktop/portfolio%20imad%20korchi%20black%20&%20white/contact.html" target="_self" class="nav__link">Contact</a>
+                                <a href="contact.html" target="_self" class="nav__link">Contact</a>
                             </li>
                              <li onclick="myFunction()" class="nav__list-item nav__list-dark-mode">
                                  <span>🌙</span>
@@ -2265,40 +2329,42 @@
                         </ul>
                     </nav>
                     
-               <!-- about -->
-               <div class="layout layout--about">
-                   <header class="header">
-                       <h1 data-title="About" class="header__title">About—</h1>
-                    </header> 
-                    <main id="main" role="main" class="main about">
-                        <figure class="main__img about__profile-pic">
-                            <img src="/les image/my pic.jpg" alt="">
-                        </figure>
-                             <img src="/les image/logo.png" alt="" role="presentation" class="about__logo"> 
-                <h2 class="about__subtitle">
-                Hey there, I’m
-                <br> <span class="about__subtitle--light">IMAD KORCHI.</span></h2> 
-                <div class="about__content"><p>I’m web developer  , currently based in Tanger , Morocco</p>
-          <p> I’m still learning CSS, HTML, java script .</p>
-          <p>
-            I love art , sport ... and now I wanna be a great developer because I find my saylfe this field</p>
-          </div> 
-        </div>
-                    
-                </div>
+             
+        <!-- skills -->
+<div class="layout layout--writing">
+    <header class="header">
+        <h1 data-title="Writing" class="header__title">Skills—</h1>
+    </header> 
+   
                
-         
-           
-
+       <div class="writing-list"> 
+    <p>HTML</p>
+    <div class="container">
+      <div class="skills html">50%</div>
+    </div>
+    
+    <p>CSS</p>
+    <div class="container">
+      <div class="skills css">25%</div>
+    </div>
+    
+    <p>JavaScript</p>
+    <div class="container">
+      <div class="skills js">2%</div>
+    </div>
+</div> 
                 
         </div>
     </div>
+   
     <script>
         function myFunction() {
            var element = document.body;
            element.classList.toggle("dark-mode");
         }
         </script>
-        
     </body>
 </html>
+
+
+

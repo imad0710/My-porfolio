@@ -300,9 +300,8 @@
             }
 
             .app {
-                background-image: url(./cloud.jpg);
-                background-repeat: no-repeat;
-               background-size: 100%;
+               
+               
                 background-color: var(--color--contrast);
                 --translateX:0vw}
 
@@ -339,7 +338,7 @@
                 max-width: 100%
             }
 
-            
+           
 
             .layout--post {
                 display: inline;
@@ -838,7 +837,7 @@
                     position:-webkit-sticky;
                     position: sticky;
                     top: 1em;
-                    width: 10vw;
+                    width: 5vw;
                     margin: 0;
                     transform: rotate(90deg) translateX(calc(-5vw - var(--translateX)));
                     white-space: nowrap
@@ -1020,7 +1019,7 @@
                 }
             }
 
-          
+           
 
 
             .contact-list {
@@ -1070,7 +1069,7 @@
                 }
             }
 
-           
+          
 
             .additional-links-list {
                 color: #696969;
@@ -1526,7 +1525,6 @@
             }
 
           
-
             .work-list-page-enter-active,.work-list-page-enter-active .header,.work-list-page-enter-active [class$=-list__item],.work-list-page-leave-active,.work-list-page-leave-active .header,.work-list-page-leave-active [class$=-list__item] {
                 transition: opacity .5s cubic-bezier(.645,.045,.355,1)
             }
@@ -2222,11 +2220,18 @@
             .nuxt-progress-failed {
                 background-color: red
             }
+
+            
+            .col-lg-6{
+                width: 20vw;
+                
+            }
+
             .dark-mode {
   background-color: black;
   color: rgb(216, 25, 25);
 }
-         
+           
   
   
         </style>
@@ -2237,6 +2242,7 @@
             <div id="__layout">
             
                 <div class="app">
+                   
                     <aside class="blm">
                         LIVE IS A MIXTURE OF BLACK AND WHITE. <br>
                         JUSTICE . PEACE
@@ -2244,60 +2250,89 @@
                     <nav class="nav" >
                         <ul class="nav__list">
                             <li class="nav__list-item">
-                                <a href="file:///C:/Users/admin/Desktop/portfolio%20imad%20korchi%20black%20&%20white/imad%20korchi%20my%20portfolio.html#" target="_self" aria-current="page" aria-label="home page" class="nav__link nav__link--no-decoration nav__link--active nuxt-link-active">
+                                <a href="imad korchi my portfolio.html" target="_self" aria-current="page" aria-label="home page" class="nav__link nav__link--no-decoration nav__link--active nuxt-link-active">
                                     <svg viewBox="0 0 100 100" fill="currentColor" class="nav__link-icon">
                                         <rect width="100" height="100"></rect>
                                     </svg>
                                 </a>
                             </li>
                             <li class="nav__list-item">
-                                <a href="file:///C:/Users/admin/Desktop/portfolio%20imad%20korchi%20black%20&%20white/work.HTML" target="_self"   class="nav__link">Work</a>
+                                <a href="work.HTML" target="_self"   class="nav__link">Work</a>
                             </li>
                             <li class="nav__list-item">
-                              <a href="file:///C:/Users/admin/Desktop/portfolio%20imad%20korchi%20black%20&%20white/skills.HTML" target="_self" class="nav__link">  Skills</a>
+                              <a href="skills.HTML" target="_self" class="nav__link">  Skills</a>
                             </li>
                              <li class="nav__list-item">
-                               <a href="file:///C:/Users/admin/Desktop/portfolio%20imad%20korchi%20black%20&%20white/about.HTML" target="_self" class="nav__link">About</a></button>
+                               <a href="about.HTML" target="_self" class="nav__link">About</a>
                             </li>
                             <li class="nav__list-item">
-                                <a href="file:///C:/Users/admin/Desktop/portfolio%20imad%20korchi%20black%20&%20white/contact.html" target="_self" class="nav__link">Contact</a>
+                                <a href="contact.html" target="_self" class="nav__link">Contact</a>
                             </li>
                              <li onclick="myFunction()" class="nav__list-item nav__list-dark-mode">
                                  <span>🌙</span>
                             </li>
                         </ul>
                     </nav>
-                    <!-- home -->
-                    <div class="container index" >
-                        <img src="./les image/logo2.svg" alt role="presentation" class="index__logo">
-                        <header class="index__header">
-                            <h1 class="index__name">
-                                IMAD
-      <br>
-                                <span class="index__header--wrap">KORCHI</span>
-                            </h1>
-                            <p class="index__role">
-                                Creative
-      <br>
-                                <span class="index__header--wrap">Developer</span>
-                            </p>
-                        </header>
-            
-                    </div>
+                    
+            <!-- contact -->
+<div class="layout layout--contact">
+    <header class="header">
+        <h1 data-title="Contact" class="header__title">Contact—</h1>
+    </header>
+         <main id="main" role="main" class="main main--container">
+             <div class="contact__content text--display text--large">
+                 <p>I’m most active and reachable <a href="https://www.instagram.com/ma.r.lo.n/">on Instagram</a> or via email,</p>
+             </div> 
+<ul class="contact__list contact-list">
+    <li class="contact__list-item">
+         <!-- contact email -->
+<div class="col-lg-6">
+    <form action="https://formspree.io/f/xvovjgnq" method="post" enctype="multipart/form-data" onsubmit="return check();" role="form" class="php-email-form">
+      <div class="form-row">
+        <div class="col form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+          <div class="validate"></div>
+        </div>
+        <div class="col form-group">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+          <div class="validate"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+        <div class="validate"></div>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+        <div class="validate"></div>
+      </div>
+      <div class="mb-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your message has been sent. Thank you!</div>
+      </div>
+      <div class="text-center"><button type="submit">Send Message</button></div>
+    </form>
+  </div>
+    </li>
+</ul> 
+             <img src="./les image/logo1.svg" alt="" role="presentation" class="contact__accent-img">
+
+ 
+         </main>
+</div>
                     
                 </div>
-               
-          
-            
         </div>
     </div>
-    
+   
     <script>
         function myFunction() {
            var element = document.body;
            element.classList.toggle("dark-mode");
         }
         </script>
-        
+   
     </body>
 </html>
+
