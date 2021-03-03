@@ -1702,6 +1702,7 @@ pre ::-moz-selection,pre::-moz-selection {
 
 .index {
     display: grid
+    
 }
 
 @media screen and (min-width: 44rem) {
@@ -1750,7 +1751,10 @@ pre ::-moz-selection,pre::-moz-selection {
 .index__header {
     z-index: 1;
     font-size: 3.1rem;
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
+    
+
+   
 }
 
 @media screen and (min-width: 44rem) {
@@ -1772,13 +1776,17 @@ pre ::-moz-selection,pre::-moz-selection {
 }
 
 .index__header--wrap {
-    padding-left: .7em
+  padding-left: 1rem;
+
 }
 
 .index__role {
-    font-family: GT Super,Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+    font-family: GT Super,Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif ;
     line-height: .9;
-    text-transform: uppercase
+    text-transform: uppercase;
+    padding-left: .7em;
+    
+  
 }
 
 .index__role .index__header--wrap {
@@ -2223,9 +2231,11 @@ color: rgb(216, 25, 25);
     color: #fff;
     text-shadow: 0 0 10px #fff,
     0 0 20px #fff,
-    0 0 40px #fff,
-    0 0 80px #fff ,
-    0 0 120px #fff;
+    0 0 30px #fff
+     ;
+   
+   
+  
    
 }
 
